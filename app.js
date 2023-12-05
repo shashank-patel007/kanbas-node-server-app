@@ -14,7 +14,7 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: "https://keen-babka-4a4617.netlify.app"
+    origin: "*"
 }));
 const sessionOptions = {
     secret: "any string",
